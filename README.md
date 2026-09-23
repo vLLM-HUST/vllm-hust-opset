@@ -1,14 +1,14 @@
 # OPset for vLLM-HUST
 
 [![PyPI](https://img.shields.io/pypi/v/vllm-hust-opset)](https://pypi.org/project/vllm-hust-opset/)
-[![CI](https://github.com/keridone/vllm-hust-opset/actions/workflows/ci.yml/badge.svg)](https://github.com/keridone/vllm-hust-opset/actions/workflows/ci.yml)
+[![CI](https://github.com/vLLM-HUST/vllm-hust-opset/actions/workflows/ci.yml/badge.svg)](https://github.com/vLLM-HUST/vllm-hust-opset/actions/workflows/ci.yml)
 
 **OPset is a pluggable operator-optimization collection for the vLLM-HUST
 Ascend backend, delivering kernel replacements, vertical fusion,
 epilogue/prologue fusion, and the performance evidence for each change.**
 
 OPset is distributed as an updateable vLLM-HUST Extension Bundle with
-independently gated optimizations. Version `0.3.1` contains:
+independently gated optimizations. Version `0.3.2` contains:
 
 - `persistent-matmul-empty`: replaces the redundant `torch.zeros` allocation
   in Ascend batch-invariant Triton `linear_persistent` with `torch.empty`.
@@ -46,7 +46,7 @@ installation with:
 
 ```bash
 pip uninstall -y vllm-hust-operator-optimizations
-pip install vllm-hust-opset==0.3.1
+pip install vllm-hust-opset==0.3.2
 ```
 
 The package records the fixed experiment line in
@@ -57,7 +57,7 @@ revalidated periodically as the underlying stack advances.
 ```bash
 export VLLM_SRC=/path/to/vllm
 export VLLM_ASCEND_SRC=/path/to/vllm-ascend-hust
-pip install vllm-hust-opset==0.3.1
+pip install vllm-hust-opset==0.3.2
 vllm-hust-opset \
   --vllm-src "$VLLM_SRC" \
   --vllm-ascend-src "$VLLM_ASCEND_SRC"
@@ -101,7 +101,7 @@ uv run --with ruff ruff check src tests
 uv build --no-sources --out-dir dist
 ```
 
-For `0.3.1`, the linear-SwiGLU Graph path was validated with Qwen2.5-7B,
+The linear-SwiGLU Graph path was validated with Qwen2.5-7B,
 ShareGPT, three matched baseline/candidate rounds and operator correctness
 coverage. Steady-state TPOT decreased by 3.82% and output-token throughput
 increased by 5.24%. Release checks remain `extension list`, `inspect`, `check`,

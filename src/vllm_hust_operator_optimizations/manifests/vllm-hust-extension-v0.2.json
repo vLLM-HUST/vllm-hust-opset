@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2-experimental",
   "extension_id": "org.vllm-hust.operator-optimizations",
-  "extension_version": "0.3.1",
+  "extension_version": "0.3.2",
   "kind": "runtime_bridge",
   "host": {
     "provider": "vllm",

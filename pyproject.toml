@@ -18,10 +18,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/keridone/vllm-hust-opset"
-Repository = "https://github.com/keridone/vllm-hust-opset"
-Issues = "https://github.com/keridone/vllm-hust-opset/issues"
-Changelog = "https://github.com/keridone/vllm-hust-opset/releases"
+Homepage = "https://github.com/vLLM-HUST/vllm-hust-opset"
+Repository = "https://github.com/vLLM-HUST/vllm-hust-opset"
+Issues = "https://github.com/vLLM-HUST/vllm-hust-opset/issues"
+Changelog = "https://github.com/vLLM-HUST/vllm-hust-opset/releases"
 
 [project.scripts]
 vllm-hust-opset = "vllm_hust_operator_optimizations.compatibility:main"
