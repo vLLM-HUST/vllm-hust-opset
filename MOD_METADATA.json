@@ -1,0 +1,36 @@
+{
+  "canonical_repository": "https://github.com/vLLM-HUST/vllm-hust-opset",
+  "display_name": "OPset for vLLM-HUST",
+  "evidence": {
+    "index": "README.md",
+    "latest_result": "https://github.com/vLLM-HUST/vllm-hust-opset#evidence-and-results",
+    "performance_claims": [],
+    "qualification": "qualified"
+  },
+  "lifecycle": {
+    "activation_contract": "See the extension manifest and README; installation or discovery alone does not enable this MOD.",
+    "default_enabled": false,
+    "rollback_contract": "Disable or remove the MOD and return to the unmodified host path.",
+    "status": "experimental"
+  },
+  "mod_id": "operator-optimizations",
+  "repository": "vllm-hust-opset",
+  "repository_type": "mod_bundle",
+  "responsibility": {
+    "advisor_status": "unknown",
+    "advisors": [],
+    "maintainers": [
+      {
+        "github": "keridone",
+        "name": "Shenghui Zhou"
+      }
+    ],
+    "organization": "vLLM-HUST"
+  },
+  "schema_version": "vllm-hust-mod-metadata-v1",
+  "scope": {
+    "mechanism": "operator_optimization_bundle",
+    "out_of_scope": [],
+    "supported_workloads": []
+  }
+}
