@@ -4,7 +4,13 @@
   "evidence": {
     "index": "README.md",
     "latest_result": "https://github.com/vLLM-HUST/vllm-hust-opset#evidence-and-results",
-    "performance_claims": [],
+    "performance_claims": [
+      {
+        "label": "matched-real-online-tested-cell",
+        "scope": "Qwen2.5-7B-Instruct, Ascend 910B2/CANN 9.0.0, graph batch-invariant path, 64 ShareGPT requests at concurrency 4",
+        "result": "Across three matched rounds, linear-SwiGLU fusion reduced steady-state TPOT by 3.82% and increased output-token throughput by 5.24%; cold start and other execution paths are out of scope."
+      }
+    ],
     "qualification": "qualified"
   },
   "lifecycle": {
@@ -17,7 +23,7 @@
   "repository": "vllm-hust-opset",
   "repository_type": "mod_bundle",
   "responsibility": {
-    "advisor_status": "unknown",
+    "advisor_status": "not_declared",
     "advisors": [],
     "maintainers": [
       {

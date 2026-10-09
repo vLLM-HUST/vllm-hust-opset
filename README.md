@@ -28,7 +28,7 @@ rejected rather than patched.
 The distribution exposes two entry points:
 
 - `vllm_hust.extension_bundles` lets `vllm-hust-ext` discover, check and enable
-  the `0.2-experimental` bundle.
+  the `0.3-experimental` bundle.
 - `vllm.general_plugins` installs a lazy import hook in each vLLM process. The
   hook changes only enabled target modules and has no device or network side
   effects at import time.
