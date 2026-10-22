@@ -1,7 +1,7 @@
 # Experiments
 
 The scripts in this directory are reference entry points for reproducing the
-checked-in evidence on a separately prepared Ascend environment. They do not
+benchmark-hosted evidence on a separately prepared Ascend environment. They do not
 download models or mutate system packages.
 
 ## Persistent MatMul allocation
@@ -16,10 +16,11 @@ download models or mutate system packages.
 The fused-kernel implementation and graph matcher live under
 `src/vllm_hust_operator_optimizations/optimizations/`. Compact synchronized
 operator samples and the matched model-level result are under
-`results/linear_swiglu_graph/`. The environment-specific service orchestration
+[the frozen benchmark directory](https://github.com/vLLM-HUST/vllm-hust-benchmark/tree/819b1975f346dca514f58880ca62518850100b2d/archive/mod-git-20261022/vllm-hust-opset/snapshot/results/linear_swiglu_graph/). The environment-specific service orchestration
 is intentionally not embedded because it contained server-local paths; follow
 [`docs/benchmark-methodology.md`](../docs/benchmark-methodology.md) and provide
 all paths explicitly in your runner.
 
 Every new optimization should add an independent experiment directory, a
-portable result summary, and an evidence-boundary document.
+portable runner and evidence-boundary documentation. Write outputs outside this
+repository and submit measurements to benchmark.

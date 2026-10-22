@@ -22,6 +22,6 @@ interpreted.
 
 ## Current platform
 
-The checked-in results were collected on Ascend 910B2. Each optimization page
+The [archived original results](../EVIDENCE.md) were collected on Ascend 910B2. Each optimization page
 records its exact CANN, Torch, torch_npu, Triton Ascend, vLLM, and
 vLLM-Ascend identity. Results are not generalized beyond those boundaries.
