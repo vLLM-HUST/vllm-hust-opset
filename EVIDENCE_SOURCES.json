@@ -1,0 +1,12 @@
+{
+  "repository": "vLLM-HUST/vllm-hust-benchmark",
+  "commit": "819b1975f346dca514f58880ca62518850100b2d",
+  "source_repository": "vLLM-HUST/vllm-hust-opset",
+  "source_commit": "33d78133905ef432624a786aab24c3e1868c6e1d",
+  "manifest": {
+    "path": "archive/mod-git-20261022/vllm-hust-opset/manifest.json",
+    "bytes": 3787,
+    "sha256": "9e1d37bf7cec646f5cd9ed891c0c774dfc4ab1d81148300776b923abefae136e"
+  },
+  "snapshot": "archive/mod-git-20261022/vllm-hust-opset/snapshot"
+}

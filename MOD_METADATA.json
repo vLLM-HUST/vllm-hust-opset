@@ -2,16 +2,11 @@
   "canonical_repository": "https://github.com/vLLM-HUST/vllm-hust-opset",
   "display_name": "OPset for vLLM-HUST",
   "evidence": {
-    "index": "README.md",
-    "latest_result": "https://github.com/vLLM-HUST/vllm-hust-opset#evidence-and-results",
-    "performance_claims": [
-      {
-        "label": "matched-real-online-tested-cell",
-        "scope": "Qwen2.5-7B-Instruct, Ascend 910B2/CANN 9.0.0, graph batch-invariant path, 64 ShareGPT requests at concurrency 4",
-        "result": "Across three matched rounds, linear-SwiGLU fusion reduced steady-state TPOT by 3.82% and increased output-token throughput by 5.24%; cold start and other execution paths are out of scope."
-      }
-    ],
-    "qualification": "qualified"
+    "index": "EVIDENCE.md",
+    "latest_result": "https://github.com/vLLM-HUST/vllm-hust-benchmark/blob/819b1975f346dca514f58880ca62518850100b2d/archive/mod-git-20261022/vllm-hust-opset/snapshot/results/linear_swiglu_graph/e2e-summary.json",
+    "performance_claims": [],
+    "qualification": "qualified",
+    "performance_claims_source": "https://github.com/vLLM-HUST/vllm-hust-benchmark/blob/819b1975f346dca514f58880ca62518850100b2d/archive/mod-git-20261022/vllm-hust-opset/snapshot/MOD_METADATA.json"
   },
   "lifecycle": {
     "activation_contract": "See the extension manifest and README; installation or discovery alone does not enable this MOD.",

@@ -101,18 +101,16 @@ uv run --with ruff ruff check src tests
 uv build --no-sources --out-dir dist
 ```
 
-The linear-SwiGLU Graph path was validated with Qwen2.5-7B,
-ShareGPT, three matched baseline/candidate rounds and operator correctness
-coverage. Steady-state TPOT decreased by 3.82% and output-token throughput
-increased by 5.24%. Release checks remain `extension list`, `inspect`, `check`,
-and `run --dry-run`; full NPU validation is refreshed periodically or when the
-optimization changes.
+Workload-scoped measurements and negative controls are preserved in
+[the original report](https://github.com/vLLM-HUST/vllm-hust-benchmark/blob/819b1975f346dca514f58880ca62518850100b2d/archive/mod-git-20261022/vllm-hust-opset/snapshot/README.md). Release checks remain
+`extension list`, `inspect`, `check` and `run --dry-run`; no new NPU
+qualification is implied by this custody migration.
 
 ## Evidence and documentation
 
 The installable package contains only runtime code and compatibility metadata.
-Research methodology, compact raw results, manifests, and evidence boundaries
-are maintained in this repository:
+This repository retains implementation and methodology. Original results and
+measured reports live in benchmark; see [EVIDENCE.md](EVIDENCE.md):
 
 - [Evidence index](docs/evidence.md)
 - [Benchmark methodology](docs/benchmark-methodology.md)
@@ -120,11 +118,8 @@ are maintained in this repository:
 - [Linear + SwiGLU Graph fusion](docs/optimizations/linear-swiglu-graph.md)
 - [Experiment entry points](experiments/README.md)
 
-Large profiler databases and service logs are intentionally excluded from Git.
-Compact JSON results are repository-relative and contain the run identifiers,
-means, variance, correctness status, and source/runtime identity needed for
-review. Large evidence archives should be attached to a matching GitHub
-Release with a SHA-256 checksum.
+All measured data, logs and Release evidence belong in benchmark. Source
+repositories retain code, methodology and immutable evidence links only.
 
 ## Canonical MOD metadata
 
