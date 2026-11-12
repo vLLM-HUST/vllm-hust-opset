@@ -18,8 +18,13 @@
   "repository": "vllm-hust-opset",
   "repository_type": "mod_bundle",
   "responsibility": {
-    "advisor_status": "not_declared",
-    "advisors": [],
+    "advisor_status": "declared",
+    "advisors": [
+      {
+        "name": "Shuhao Zhang / 张书豪",
+        "relationship": "internal"
+      }
+    ],
     "maintainers": [
       {
         "github": "keridone",
